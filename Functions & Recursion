@@ -49,3 +49,12 @@ def calc_sum(n):
         return n + calc_sum(n-1)
 
 print(calc_sum(5))
+
+def print_list_recursive(lst,idx):
+    if idx==len(lst):
+        return
+    print(lst[idx],end=" ")
+    print_list_recursive(lst,idx+1)
+
+nums=[2,3,43,2,32]
+print_list_recursive(nums,0)
